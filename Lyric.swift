@@ -24,26 +24,6 @@ struct Lyric: Identifiable {
     let isBookMarkedSong: Bool
     let isSharedSong: Bool
     let isCopySong: Bool
-    var words: String?
-    //var time: Date = Date()
-    
-    // The reason why lyric.isNotedSong is working is because of ! in front of it.
-    
-    func updateNotes(isNoted: String) -> Lyric {
-        return Lyric(id: id, zoTitle: zoTitle, engTitle: engTitle, key: key, musicStyle: musicStyle, translation: translation, verse1: verse1, verse2: verse2, verse3: verse3, verse4: verse4, verse5: verse5, preChorus: preChorus, chorus: chorus, bridge: bridge, isFavoriteSong: isFavoriteSong, isNotedSong: isNotedSong, isHighlightedSong: isHighlightedSong, isBookMarkedSong: isBookMarkedSong, isSharedSong: isSharedSong, isCopySong: isCopySong, words: isNoted)
-    }
-    
-    func updateFavorite(isFavorited: Bool) -> Lyric {
-        return Lyric(id: id, zoTitle: zoTitle, engTitle: engTitle, key: key, musicStyle: musicStyle, translation: translation, verse1: verse1, verse2: verse2, verse3: verse3, verse4: verse4, verse5: verse5, preChorus: preChorus, chorus: chorus, bridge: bridge, isFavoriteSong: isFavorited, isNotedSong: isNotedSong, isHighlightedSong: isHighlightedSong, isBookMarkedSong: isBookMarkedSong, isSharedSong: isSharedSong, isCopySong: isCopySong)
-    }
-    
-    func updateHighlight(isHighlighted: Bool) -> Lyric {
-        return Lyric(id: id, zoTitle: zoTitle, engTitle: engTitle, key: key, musicStyle: musicStyle, translation: translation, verse1: verse1, verse2: verse2, verse3: verse3, verse4: verse4, verse5: verse5, preChorus: preChorus, chorus: chorus, bridge: bridge, isFavoriteSong: isFavoriteSong, isNotedSong: isNotedSong, isHighlightedSong: isHighlighted, isBookMarkedSong: isBookMarkedSong, isSharedSong: isSharedSong, isCopySong: isCopySong)
-    }
-    
-//    func updateBookmark(isBookmarked: Bool) -> Lyric {
-//        return Lyric(id: id, zoTitle: zoTitle, engTitle: engTitle, key: key, musicStyle: musicStyle, translation: translation, verse1: verse1, verse2: verse2, verse3: verse3, verse4: verse4, verse5: verse5, preChorus: preChorus, chorus: chorus, bridge: bridge, isFavoriteSong: isFavoriteSong, isNotedSong: isNotedSong, isHighlightedSong: isHighlightedSong, isBookMarkedSong: isBookmarked, isSharedSong: isSharedSong, isCopySong: isCopySong)
-//    }
     
 }
 
